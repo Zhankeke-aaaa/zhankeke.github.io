@@ -1,1 +1,288 @@
-这是我得测试地址
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历 - 科研人员</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", Arial, sans-serif;
+            line-height: 1.6;
+        }
+        body {
+            background-color: #f5f7fa;
+            padding: 30px;
+            color: #333;
+        }
+        .resume-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px 50px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+        }
+        /* 头部个人信息 */
+        .resume-header {
+            text-align: center;
+            border-bottom: 2px solid #2c5282;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .resume-header h1 {
+            font-size: 28px;
+            color: #222;
+            margin-bottom: 10px;
+        }
+        .base-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            font-size: 15px;
+            color: #555;
+        }
+        /* 通用板块样式 */
+        .section {
+            margin-bottom: 28px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c5282;
+            border-left: 4px solid #2c5282;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+        .content-item {
+            margin-bottom: 12px;
+        }
+        .item-head {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+        .item-desc {
+            font-size: 15px;
+            color: #444;
+            padding-left: 10px;
+        }
+        /* 论文、专利列表 */
+        .paper-list, .patent-list {
+            padding-left: 15px;
+        }
+        .paper-list li, .patent-list li {
+            font-size: 14.5px;
+            margin-bottom: 10px;
+            list-style: decimal;
+            padding-left: 5px;
+        }
+        /* 技能&荣誉 */
+        .flex-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        .flex-col {
+            flex: 1;
+            min-width: 280px;
+        }
+        /* 打印适配 */
+        @media print {
+            body {
+                padding: 0;
+                background: #fff;
+            }
+            .resume-container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            .resume-container {
+                padding: 20px;
+            }
+            .base-info {
+                gap: 10px;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- 一、个人基本信息 -->
+        <div class="resume-header">
+            <h1>XXX</h1>
+            <div class="base-info">
+                <span>性别：XX</span>
+                <span>年龄：XX岁</span>
+                <span>联系电话：138-XXXX-XXXX</span>
+                <span>电子邮箱：xxx@shturl.</span>
+                <span>求职意向：科研人员 / 研发工程师 / 课题研究员</span>
+            </div>
+        </div>
+
+        <!-- 二、教育背景 -->
+        <div class="section">
+            <div class="section-title">教育背景</div>
+            <div class="content-item">
+                <div class="item-head">
+                    <span>XX大学 | XX专业 | 硕士/博士</span>
+                    <span>20XX.09 - 20XX.06</span>
+                </div>
+                <div class="item-desc">
+                    主修方向：XX领域基础理论、XX技术研发、数据分析与模型构建；
+                    在校期间专注XX方向科研学习，参与多项校级/省级科研课题，系统掌握本领域研究方法与实验技能。
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="item-head">
+                    <span>XX院校 | XX专业 | 本科</span>
+                    <span>20XX.09 - 20XX.06</span>
+                </div>
+                <div class="item-desc">
+                    系统学习专业基础课程，成绩优异，具备扎实的理论功底，奠定后续科研工作基础。
+                </div>
+            </div>
+        </div>
+
+        <!-- 三、科研/工作经历 -->
+        <div class="section">
+            <div class="section-title">科研工作经历</div>
+            <div class="content-item">
+                <div class="item-head">
+                    <span>XX研究院 / XX实验室 | 科研人员</span>
+                    <span>20XX.07 - 至今</span>
+                </div>
+                <div class="item-desc">
+                    1. 独立负责XX方向课题研究，开展实验设计、数据采集、结果分析与验证工作；<br>
+                    2. 参与国家级/省部级科研项目，完成文献调研、技术方案撰写、阶段性报告输出；<br>
+                    3. 牵头开展技术攻关，优化实验流程与算法模型，提升整体研究效率与成果质量；<br>
+                    4. 组织组内学术交流，协助指导实习生及初级研究员开展基础科研工作。
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="item-head">
+                    <span>XX高校课题组 | 研究助理</span>
+                    <span>20XX.03 - 20XX.06</span>
+                </div>
+                <div class="item-desc">
+                    负责中英文文献检索、整理与综述撰写，协助完成实验操作、数据统计、图表绘制等工作，参与论文初稿撰写。
+                </div>
+            </div>
+        </div>
+
+        <!-- 四、学术论文成果 -->
+        <div class="section">
+            <div class="section-title">学术论文（代表作）</div>
+            <ul class="paper-list">
+                <li>
+                    <strong>[SCI/核心期刊]</strong> 第一作者. 论文题目[J]. 期刊名称, 20XX, XX(XX): XX-XX. 
+                    <em>（研究方向：XXX，影响因子：XX）</em>
+                </li>
+                <li>
+                    <strong>[EI/会议论文]</strong> 通讯作者/第二作者. 论文题目[C]. 会议名称, 地点, 20XX: XX-XX.
+                </li>
+                <li>
+                    <strong>[中文核心]</strong> 参与作者. 论文题目[J]. 期刊名称, 20XX, XX(XX): XX-XX.
+                </li>
+                <li>
+                    国际会议摘要/海报：XXX. 论文标题. XX国际学术会议, 20XX.
+                </li>
+            </ul>
+        </div>
+
+        <!-- 五、专利成果 -->
+        <div class="section">
+            <div class="section-title">专利成果</div>
+            <ul class="patent-list">
+                <li>
+                    <strong>发明专利（授权）</strong>：一种XXX装置及方法. 专利号：ZL 20XXXXXXXXX. 
+                    发明人：XXX（第一发明人），授权日期：20XX年XX月。
+                </li>
+                <li>
+                    <strong>实用新型专利（授权）</strong>：一种XXX结构. 专利号：ZL 20XXXXXXXXX.
+                    发明人：XXX（第二发明人），授权日期：20XX年XX月。
+                </li>
+                <li>
+                    <strong>发明专利（实质审查）</strong>：一种XXX检测方法. 申请号：20XXXXXXXXX.
+                    发明人：XXX，申请日期：20XX年XX月。
+                </li>
+            </ul>
+        </div>
+
+        <!-- 六、科研项目经历 -->
+        <div class="section">
+            <div class="section-title">主持/参与科研项目</div>
+            <div class="content-item">
+                <div class="item-head">
+                    <span>XX国家自然科学基金项目 | 参与人</span>
+                    <span>20XX.01 - 20XX.12</span>
+                </div>
+                <div class="item-desc">
+                    项目编号：XXXXXX，项目经费：XX万元；负责XX模块研究、实验验证与数据分析，支撑项目核心指标完成。
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="item-head">
+                    <span>XX省级重点研发计划 | 核心成员</span>
+                    <span>20XX.01 - 20XX.12</span>
+                </div>
+                <div class="item-desc">
+                    围绕XX技术开展应用研究，完成技术方案落地、测试报告撰写，助力项目顺利结题。
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="item-head">
+                    <span>校级青年科研基金 | 项目负责人</span>
+                    <span>20XX.01 - 20XX.12</span>
+                </div>
+                <div class="item-desc">
+                    独立设计研究方案，统筹项目进度、经费使用与成果输出，项目考核评级优秀。
+                </div>
+            </div>
+        </div>
+
+        <!-- 七、专业技能 & 荣誉奖项 -->
+        <div class="section flex-row">
+            <div class="flex-col">
+                <div class="section-title">专业技能</div>
+                <div class="item-desc">
+                    1. 科研工具：熟练使用 Origin、SPSS、MATLAB、Python、AutoCAD 等数据处理、仿真与绘图软件；<br>
+                    2. 文献能力：精通中英文文献检索、阅读、综述撰写，熟练使用 EndNote、NoteExpress 文献管理工具；<br>
+                    3. 语言能力：大学英语六级（CET-6），可熟练阅读外文文献、撰写英文论文与报告；<br>
+                    4. 其他技能：实验操作、数据分析、学术报告撰写、项目申报材料编制。
+                </div>
+            </div>
+            <div class="flex-col">
+                <div class="section-title">荣誉奖项</div>
+                <div class="item-desc">
+                    1. 20XX年 优秀科研工作者 / 优秀研究生；<br>
+                    2. 20XX年 学术成果奖 / 优秀论文奖；<br>
+                    3. 20XX年 学业一等奖学金 / 科研创新奖学金；<br>
+                    4. 多次获评项目先进个人、学术活动积极分子。
+                </div>
+            </div>
+        </div>
+
+        <!-- 八、自我评价 -->
+        <div class="section">
+            <div class="section-title">自我评价</div>
+            <div class="item-desc">
+                拥有多年XX领域科研经验，具备完整的课题研究、论文发表、专利申报及项目执行经验。理论基础扎实，实验动手能力强，逻辑思维严谨，善于发现并解决科研过程中的技术问题。
+                工作认真踏实、专注力强，具备良好的学术素养、团队协作能力与抗压能力。持续关注行业前沿技术，热爱科研工作，能够独立承担科研任务，期望在相关领域持续深耕，产出高质量科研成果。
+            </div>
+        </div>
+    </div>
+</body>
+</html>
